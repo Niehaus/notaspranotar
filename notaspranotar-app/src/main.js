@@ -1,12 +1,29 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import jquery from "jquery";
 
-import App from './App.vue'
-import router from './router'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
-const app = createApp(App)
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 
-app.use(createPinia())
-app.use(router)
+import App from "./App.vue";
+import router from "./router";
 
-app.mount('#app')
+window.$ = window.jQuery = jquery;
+
+/* Import de Estilos */
+import "./assets/styles/variaveis.sass";
+
+/* Import de Componentes */
+import NotasSection from "./components/NotasSection.vue";
+import NotasButton from "./components/NotasButton.vue";
+
+const app = createApp(App);
+
+app.component("NotasSection", NotasSection);
+app.component("NotasButton", NotasButton);
+
+app.use(createPinia());
+app.use(router);
+
+app.mount("#app");

@@ -1,0 +1,52 @@
+<script>
+export default {
+  name: "NotasButton",
+  props: {
+    buttonClass: {
+      type: String,
+      required: true,
+      default: "button-creme",
+    },
+  },
+};
+</script>
+
+<template>
+  <button type="button" :class="['btn', 'btn-primary', buttonClass]">
+    lorem ipsum
+  </button>
+</template>
+
+<style lang="sass">
+@import "../assets/styles/variaveis"
+
+.btn-primary
+  border-radius: 0
+  font-family: $laura-regular
+  &:focus-visible
+    outline: none
+  &.button-creme
+    background-color: $notas-creme
+    border: 2px solid black
+    color: black
+    &:hover
+      background-color: $button-creme-hover !important
+    &:focus
+      background-color: 0 0 0 .25rem rgba(242, 220, 177, 0.5)
+
+  &.button-azul
+    background-color: $notas-azul
+    border: 2px solid white
+    &:hover
+      background-color: $button-azul-hover !important
+    &:focus
+      box-shadow: 0 0 0 0.25rem rgba(49, 177, 253, 0.5)
+
+  &.button-laranja
+    background-color: $notas-laranja
+    border: 2px solid white
+    &:hover
+      background-color: $button-laranja-hover !important
+    &:focus
+      box-shadow: 0 0 0 .25rem rgba(253, 116, 49, 0.5)
+</style>

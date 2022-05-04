@@ -17,11 +17,13 @@ import "./assets/styles/variaveis.sass";
 /* Import de Componentes */
 import NotasSection from "./components/NotasSection.vue";
 import NotasButton from "./components/NotasButton.vue";
+import NotasHeader from "./components/NotasHeader.vue";
 
 const app = createApp(App);
 
 app.component("NotasSection", NotasSection);
 app.component("NotasButton", NotasButton);
+app.component("NotasHeader", NotasHeader);
 
 app.use(createPinia());
 app.use(router);

@@ -9,7 +9,7 @@ $notas-verde: #01a281
 $notas-azul: #01a7e3
 $notas-roxo: #814794
 $notas-marrom-escuro: #4c404e
-$notas-light-background:#fdf9e2
+$notas-light-background: #fdf9e2
 $notas-laranja-background: #d38d72
 $notas-azul-background: #60979c
 
@@ -29,6 +29,44 @@ $xxl: 1400px
 
 @font-face
     font-family: 'Laura-Regular'
-    src: url('/fonts/Laura.ttf') format("truetype")
+    src: url('../fonts/Laura.ttf') format("truetype")
+
+@font-face
+    font-family: 'Traveling Typewriter'
+    src: url('../fonts/TravelingTypewriter.ttf') format("truetype")
 
 $laura-regular: 'Laura-Regular'
+$type-writer: 'Traveling Typewriter'
+
+/* Estilos de barrinha de rolagem */
+
+.img-container::-webkit-scrollbar
+    width: 8px
+    height: 8px
+
+.img-container::-webkit-scrollbar-track-piece
+    background-color: transparent
+
+.img-container::-webkit-scrollbar-thumb:vertical
+    height: 30px
+    background-color: #000
+
+.img-container::-webkit-scrollbar-thumb:horizontal
+    background-color: transparent
+
+.img-container::-webkit-scrollbar-thumb:horizontal:hover
+    background-color: #000
+
+::-webkit-scrollbar
+    width: 8px
+    height: 8px
+
+::-webkit-scrollbar-track-piece
+    background-color: transparent
+
+::-webkit-scrollbar-thumb:vertical
+    height: 30px
+    background-color: #000
+
+::-webkit-scrollbar-thumb:horizontal
+    background-color: #000

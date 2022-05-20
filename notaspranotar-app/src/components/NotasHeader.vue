@@ -59,6 +59,7 @@ onMounted(() => {
     color: #000
     text-transform: uppercase
     text-decoration: none
-    font-family: "Laura-Regular"
+    font-family: $type-writer
+    font-size: 16px
 
 </style>

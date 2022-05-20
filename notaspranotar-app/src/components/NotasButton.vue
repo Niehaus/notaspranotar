@@ -22,7 +22,7 @@ export default {
 
 .btn-primary
   border-radius: 0
-  font-family: $laura-regular
+  font-family: $type-writer
   &:focus-visible
     outline: none
   &.button-creme

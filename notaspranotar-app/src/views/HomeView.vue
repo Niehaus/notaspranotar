@@ -62,8 +62,40 @@ export default {
             <NotasButton buttonClass="button-azul"></NotasButton>
           </div>
           <div class="col-md-8 col-lg-8 col-sm-12 lado-direito">
-            <img src="../assets/imagens/poema9.jpg" class="img-esquerda" alt="Imagem-1" />
-            <img src="../assets/imagens/poema11.jpg" class="img-direita" alt="Imagem-2" />
+            <!-- <img src="../assets/imagens/poema9.jpg" class="img-esquerda" alt="Imagem-1" />
+            <img src="../assets/imagens/poema11.jpg" class="img-direita" alt="Imagem-2" /> -->
+
+            <div class="container overflow-auto img-container" style="max-width: 1920px">
+              <div class="d-flex flex-row flex-nowrap">
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema9.jpg" alt="Imagem-1" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+                <div class="card card-body card-img">
+                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </template>
@@ -73,7 +105,8 @@ export default {
       <template v-slot:conteudo>
         <div class="row">
           <div class="col-md-4 col-lg-4 col-sm-12 lado-mapa">
-            <h3>MAPA</h3>
+            <h1>MAPA</h1>
+            <img src="../assets/imagens/mapapin.png" alt="Pin do Mapa" style="max-width: 120px" />
           </div>
           <div class="col-md-8 col-lg-8 col-sm-12 lado-texto">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
@@ -119,7 +152,7 @@ export default {
   background-color: $notas-azul-background
   color: $notas-light-background
   padding: 0 !important
-  .row  
+  .row
     align-items: center
   .lado-mapa
     padding: 3rem
@@ -127,19 +160,23 @@ export default {
     display: flex
     align-items: center
     min-height: 200px
+    justify-content: center
 
 #contato
   background-color: $notas-light-background
 
 #header-liner
+  background: url('../assets/imagens/background1.png')
+  background-size: 740px
+  background-position: top right
+  background-repeat: no-repeat
   background-color: $notas-light-background
-  
   padding-top: 8rem
   padding-bottom: 3.5rem
-  
+
 #poemas
   padding: 0 !important
-  padding-left: 12px !important
+  overflow: hidden
   background-color: $notas-light-background
   .lado-esquerdo
     background-color: $notas-laranja-background
@@ -148,12 +185,26 @@ export default {
     background-color: $notas-light-background
     padding: 3rem
     border-left: 4px solid #000
-  img 
+  img
     width: 275px
-    margin: 10px
+    // margin: 10px
     &.img-esquerda, &.img-direita
       position: relative
       left: -80px
 
     // &.img-direita
+.img-container
+      position: relative
+      left: -100px
+
+.card-body
+  min-height: 240px
+  min-width: 275px
+  max-width: 275px
+  margin-right: 15px
+  &.card-img
+    padding: 0
+    border: none
+    box-shadow: none
+    background: transparent
 </style>

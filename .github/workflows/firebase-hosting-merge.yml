@@ -10,11 +10,9 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: see others foolders
-        run: ls -la
-      - name: Get into app folder
-        run: cd notaspranotar-app/
       - uses: actions/checkout@v2
+      - name: Setup App Folder
+        working-directory: ./notaspranotar-app
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

@@ -34,6 +34,10 @@ import { RouterView } from "vue-router";
 
 <style lang="sass">
 @import "@/assets/reset.css"
+@import "./assets/styles/variaveis"
+
+#app
+  font-family: $type-writer
 
 #rodape
   position: sticky

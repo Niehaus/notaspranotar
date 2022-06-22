@@ -6,7 +6,7 @@
 		"rewrites": [
 			{
 				"source": "**",
-				"destination": "/notaspranotar-app/index.html"
+				"destination": "/index.html"
 			}
 		]
 	}

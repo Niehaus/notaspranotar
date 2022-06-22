@@ -7,13 +7,17 @@ export default {
       required: true,
       default: "button-creme",
     },
+    text: {
+      type: String,
+      default: "lorem ipsum",
+    },
   },
 };
 </script>
 
 <template>
   <button type="button" :class="['btn', 'btn-primary', buttonClass]">
-    lorem ipsum
+    {{ text }}
   </button>
 </template>
 
@@ -35,7 +39,7 @@ export default {
       background-color: 0 0 0 .25rem rgba(242, 220, 177, 0.5)
 
   &.button-azul
-    background-color: $notas-azul
+    background-color: $notas-azul-background
     border: 2px solid white
     &:hover
       background-color: $button-azul-hover !important
@@ -43,7 +47,7 @@ export default {
       box-shadow: 0 0 0 0.25rem rgba(49, 177, 253, 0.5)
 
   &.button-laranja
-    background-color: $notas-laranja
+    background-color: $notas-laranja-background
     border: 2px solid white
     &:hover
       background-color: $button-laranja-hover !important

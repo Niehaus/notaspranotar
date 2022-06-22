@@ -23,6 +23,7 @@ onMounted(() => {
           <a class="navbar-brand">NOTASPRANOTAR</a>
         </div>
         <form class="d-flex router-link-wrapper">
+          <RouterLink to="/">início</RouterLink>
           <RouterLink to="/sobre">Sobre</RouterLink>
           <RouterLink to="/poemas">Poemas</RouterLink>
           <RouterLink to="/mapa">Mapa</RouterLink>

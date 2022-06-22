@@ -12,8 +12,10 @@ export default {
 
 <template>
   <div class="container-fluid notas-section-cf" :id="sectionId">
-    <div class="notas-section">
-      <slot name="conteudo"></slot>
+    <div class="container">
+      <div class="notas-section">
+        <slot name="conteudo"></slot>
+      </div>
     </div>
   </div>
 </template>

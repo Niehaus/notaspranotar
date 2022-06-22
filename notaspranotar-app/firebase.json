@@ -1,16 +1,13 @@
 {
-  "hosting": {
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "/notaspranotar-app/**",
-        "destination": "/notaspranotar-app/index.html"
-      }
-    ]
-  }
+	"hosting": {
+		"site": "notaspranotar",
+		"public": "dist",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"rewrites": [
+			{
+				"source": "/notaspranotar-app/**",
+				"destination": "/notaspranotar-app/index.html"
+			}
+		]
+	}
 }

@@ -28,121 +28,97 @@ export default {
 </script>
 
 <template>
-  <NotasHeader></NotasHeader>
-  <main>
-    <NotasSection sectionId="header-liner">
-      <template v-slot:conteudo>
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <p class="mb-3">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              impedit ex inventore ipsum eos rerum quidem voluptate? Dignissimos
-              voluptatem iste, quaerat suscipit debitis iusto, fugiat totam, error
-              reprehenderit repudiandae quos.
-            </p>
-            <NotasButton buttonClass="button-creme"></NotasButton>
-            <!-- <NotasButton buttonClass="button-azul"></NotasButton>
-            <NotasButton buttonClass="button-laranja"></NotasButton> -->
-          </div>
+  <NotasSection sectionId="header-liner">
+    <template v-slot:conteudo>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+            impedit ex inventore ipsum eos rerum quidem voluptate? Dignissimos
+            voluptatem iste, quaerat suscipit debitis iusto, fugiat totam, error
+            reprehenderit repudiandae quos.
+          </p>
+          <NotasButton buttonClass="button-creme"></NotasButton>
         </div>
-      </template>
-    </NotasSection>
+      </div>
+    </template>
+  </NotasSection>
 
-    <NotasSection sectionId="poemas">
-      <template v-slot:conteudo>
-        <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-12 lado-esquerdo">
-            <h1>POEMAS</h1>
-            <p class="my-3">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              impedit ex inventore ipsum eos rerum quidem voluptate? Dignissimos
-              voluptatem iste, quaerat suscipit debitis iusto, fugiat totam, error
-              reprehenderit repudiandae quos.
-            </p>
-            <NotasButton buttonClass="button-azul"></NotasButton>
-          </div>
-          <div class="col-md-8 col-lg-8 col-sm-12 lado-direito">
-            <!-- <img src="../assets/imagens/poema9.jpg" class="img-esquerda" alt="Imagem-1" />
+  <NotasSection sectionId="poemas">
+    <template v-slot:conteudo>
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12 lado-esquerdo">
+          <h1>POEMAS</h1>
+          <p class="my-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+            impedit ex inventore ipsum eos rerum quidem voluptate? Dignissimos
+            voluptatem iste, quaerat suscipit debitis iusto, fugiat totam, error
+            reprehenderit repudiandae quos.
+          </p>
+          <NotasButton buttonClass="button-azul"></NotasButton>
+        </div>
+        <div class="col-md-8 col-lg-8 col-sm-12 lado-direito">
+          <!-- <img src="../assets/imagens/poema9.jpg" class="img-esquerda" alt="Imagem-1" />
             <img src="../assets/imagens/poema11.jpg" class="img-direita" alt="Imagem-2" /> -->
 
-            <div class="container overflow-auto img-container" style="max-width: 1920px">
-              <div class="d-flex flex-row flex-nowrap">
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema9.jpg" alt="Imagem-1" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
-                <div class="card card-body card-img">
-                  <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-                </div>
+          <div
+            class="container overflow-auto img-container"
+            style="max-width: 1920px"
+          >
+            <div class="d-flex flex-row flex-nowrap">
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema9.jpg" alt="Imagem-1" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+              </div>
+              <div class="card card-body card-img">
+                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
               </div>
             </div>
           </div>
         </div>
-      </template>
-    </NotasSection>
+      </div>
+    </template>
+  </NotasSection>
 
-    <NotasSection sectionId="mapa">
-      <template v-slot:conteudo>
-        <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-12 lado-mapa">
-            <h1>MAPA</h1>
-            <img src="../assets/imagens/mapapin.png" alt="Pin do Mapa" style="max-width: 120px" />
-          </div>
-          <div class="col-md-8 col-lg-8 col-sm-12 lado-texto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-            impedit ex inventore ipsum eos rerum quidem voluptate.
-          </div>
+  <NotasSection sectionId="mapa">
+    <template v-slot:conteudo>
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12 lado-mapa">
+          <h1>MAPA</h1>
+          <img
+            src="../assets/imagens/mapapin.png"
+            alt="Pin do Mapa"
+            style="max-width: 120px"
+          />
         </div>
-      </template>
-    </NotasSection>
-
-    <NotasSection sectionId="contato">
-      <template v-slot:conteudo>
-        <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-12">
-            <h3>CONTATO</h3>
-          </div>
-          <div class="col-md-8 col-lg-8 col-sm-12">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-            impedit ex inventore ipsum eos rerum quidem voluptate.
-          </div>
+        <div class="col-md-8 col-lg-8 col-sm-12 lado-texto">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+          impedit ex inventore ipsum eos rerum quidem voluptate.
         </div>
-      </template>
-    </NotasSection>
-
-
-    <NotasSection sectionId="rodape">
-      <template v-slot:conteudo>
-        <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-12">
-            <h3>RODAPE</h3>
-          </div>
-        </div>
-      </template>
-    </NotasSection>
-  </main>
+      </div>
+    </template>
+  </NotasSection>
 </template>
-
 
 <style lang="sass">
 
@@ -155,14 +131,14 @@ export default {
   .row
     align-items: center
   .lado-mapa
-    padding: 3rem
+    padding: 3rem 0
     border-right: 4px solid #000
     display: flex
     align-items: center
     min-height: 200px
-    justify-content: center
+    // justify-content: center
 
-#contato
+#contato, #rodape
   background-color: $notas-light-background
 
 #header-liner
@@ -173,6 +149,7 @@ export default {
   background-color: $notas-light-background
   padding-top: 8rem
   padding-bottom: 3.5rem
+  background-blend-mode: exclusion
 
 #poemas
   padding: 0 !important

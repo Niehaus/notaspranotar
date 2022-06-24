@@ -33,10 +33,10 @@ export default {
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <p class="mb-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-            impedit ex inventore ipsum eos rerum quidem voluptate? Dignissimos
-            voluptatem iste, quaerat suscipit debitis iusto, fugiat totam, error
-            reprehenderit repudiandae quos.
+            Projeto literário materializado em arte urbana, com poesia e
+            ilustração. Patrocinado pela Lei Municipal de Incentivo à Cultura,
+            do Edital 004/2021 - Lei de Incentivo à Cultura: FPC - Fundo de
+            Projetos Culturais
           </p>
           <NotasButton buttonClass="button-creme"></NotasButton>
         </div>
@@ -50,10 +50,9 @@ export default {
         <div class="col-md-4 col-lg-4 col-sm-12 lado-esquerdo">
           <h1>POEMAS</h1>
           <p class="my-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-            impedit ex inventore ipsum eos rerum quidem voluptate? Dignissimos
-            voluptatem iste, quaerat suscipit debitis iusto, fugiat totam, error
-            reprehenderit repudiandae quos.
+            Nessa primeira edição do projeto, contamos com os versos de laura
+            conti ilustrados pela Malu Marzagão. Além de disponíveis nas ruas da
+            cidade, aqui você encontra todos eles ilustrados e recitados!
           </p>
           <NotasButton buttonClass="button-azul"></NotasButton>
         </div>
@@ -111,10 +110,10 @@ export default {
             style="max-width: 120px"
           />
         </div>
-        <div class="col-md-8 col-lg-8 col-sm-12 lado-texto">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-          impedit ex inventore ipsum eos rerum quidem voluptate.
-        </div>
+        <p class="col-md-8 col-lg-8 col-sm-12 lado-texto">
+          Percurso poético da cidade de Pouso Alegre! Para que você saiba onde
+          está cada um de nossos poemas.
+        </p>
       </div>
     </template>
   </NotasSection>
@@ -127,7 +126,7 @@ export default {
 #mapa
   background-color: $notas-azul-background
   color: $notas-light-background
-  padding: 0 !important
+  // padding: 0 !important
   .row
     align-items: center
   .lado-mapa
@@ -144,12 +143,13 @@ export default {
 #header-liner
   background: url('../assets/imagens/background1.png')
   background-size: 740px
-  background-position: top right
+  background-position: bottom right
   background-repeat: no-repeat
   background-color: $notas-light-background
   padding-top: 8rem
   padding-bottom: 3.5rem
   background-blend-mode: exclusion
+  min-height: 650px
 
 #poemas
   padding: 0 !important
@@ -157,10 +157,10 @@ export default {
   background-color: $notas-light-background
   .lado-esquerdo
     background-color: $notas-laranja-background
-    padding: 3rem
+    padding: 6rem
   .lado-direito
     background-color: $notas-light-background
-    padding: 3rem
+    padding: 6rem
     border-left: 4px solid #000
   img
     width: 275px

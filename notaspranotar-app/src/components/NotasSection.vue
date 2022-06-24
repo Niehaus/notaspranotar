@@ -12,11 +12,9 @@ export default {
 
 <template>
   <div class="container-fluid notas-section-cf" :id="sectionId">
-    <div class="container">
-      <div class="notas-section">
-        <slot name="conteudo"></slot>
-      </div>
-    </div>
+    <slot name="conteudo"></slot>
+    <!-- <div class="notas-section">
+    </div> -->
   </div>
 </template>
 
@@ -31,5 +29,5 @@ export default {
   display: flex
   align-items: center
   min-height: 200px
-  padding: 3rem
+  padding: 0 6rem
 </style>

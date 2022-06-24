@@ -11,12 +11,22 @@ export default {
       type: String,
       default: "lorem ipsum",
     },
+    foo: {
+      type: Function,
+      default: () => {
+        console.log("foo do botao");
+      },
+    },
   },
 };
 </script>
 
 <template>
-  <button type="button" :class="['btn', 'btn-primary', buttonClass]">
+  <button
+    type="button"
+    :class="['btn', 'btn-primary', buttonClass]"
+    @click="foo()"
+  >
     {{ text }}
   </button>
 </template>

@@ -30,15 +30,17 @@ export default {
 <template>
   <NotasSection sectionId="header-liner">
     <template v-slot:conteudo>
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <p class="mb-3">
-            Projeto literário materializado em arte urbana, com poesia e
-            ilustração. Patrocinado pela Lei Municipal de Incentivo à Cultura,
-            do Edital 004/2021 - Lei de Incentivo à Cultura: FPC - Fundo de
-            Projetos Culturais
-          </p>
-          <NotasButton buttonClass="button-creme"></NotasButton>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <p class="mb-3">
+              Projeto literário materializado em arte urbana, com poesia e
+              ilustração. Patrocinado pela Lei Municipal de Incentivo à Cultura,
+              do Edital 004/2021 - Lei de Incentivo à Cultura: FPC - Fundo de
+              Projetos Culturais
+            </p>
+            <NotasButton buttonClass="button-creme"></NotasButton>
+          </div>
         </div>
       </div>
     </template>
@@ -101,19 +103,21 @@ export default {
 
   <NotasSection sectionId="mapa">
     <template v-slot:conteudo>
-      <div class="row">
-        <div class="col-md-4 col-lg-4 col-sm-12 lado-mapa">
-          <h1>MAPA</h1>
-          <img
-            src="../assets/imagens/mapapin.png"
-            alt="Pin do Mapa"
-            style="max-width: 120px"
-          />
+      <div class="container">
+        <div class="row flex-grow-1">
+          <div class="col-md-4 col-lg-4 col-sm-12 lado-mapa">
+            <h1>MAPA</h1>
+            <img
+              src="../assets/imagens/mapapin.png"
+              alt="Pin do Mapa"
+              style="max-width: 120px"
+            />
+          </div>
+          <p class="col-md-8 col-lg-8 col-sm-12 lado-texto">
+            Percurso poético da cidade de Pouso Alegre! Para que você saiba onde
+            está cada um de nossos poemas.
+          </p>
         </div>
-        <p class="col-md-8 col-lg-8 col-sm-12 lado-texto">
-          Percurso poético da cidade de Pouso Alegre! Para que você saiba onde
-          está cada um de nossos poemas.
-        </p>
       </div>
     </template>
   </NotasSection>

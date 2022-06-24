@@ -32,60 +32,62 @@ export default {
     <RouterView />
     <NotasSection sectionId="contato">
       <template v-slot:conteudo>
-        <div class="row align-items-center">
-          <div class="col-md-4 col-lg-4 col-sm-12 lado-esquerdo">
-            <h3>CONTATO</h3>
-          </div>
-          <div class="col-md-8 col-lg-8 col-sm-12">
-            <span>
-              Para falar com a gente use a dm do instagram @notaspranotar ou o
-              e-mail notaspranotar@gmail.com
-            </span>
-            <form ref="form" class="my-3">
-              <div class="form-group mb-2 row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Digite seu nome.."
-                      name="from_name"
-                    />
-                  </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 col-lg-4 col-sm-12 lado-esquerdo">
+              <h3>CONTATO</h3>
+            </div>
+            <div class="col-md-8 col-lg-8 col-sm-12">
+              <span>
+                Para falar com a gente use a dm do instagram @notaspranotar ou o
+                e-mail notaspranotar@gmail.com
+              </span>
+              <form ref="form" class="my-3">
+                <div class="form-group mb-2 row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        placeholder="Digite seu nome.."
+                        name="from_name"
+                      />
+                    </div>
 
-                  <div class="form-group mt-2">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                      name="reply_to"
-                    />
+                    <div class="form-group mt-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                        name="reply_to"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Digite sua mensagem aqui.."
+                        style="min-height: 95px"
+                        name="message"
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Digite sua mensagem aqui.."
-                      style="min-height: 95px"
-                      name="message"
-                    ></textarea>
-                  </div>
+                <div class="align-btn-wrapper d-flex justify-content-end">
+                  <NotasButton
+                    buttonClass="button-creme"
+                    text="Enviar Mensagem"
+                    :foo="sendEmail"
+                  ></NotasButton>
                 </div>
-              </div>
-              <div class="align-btn-wrapper d-flex justify-content-end">
-                <NotasButton
-                  buttonClass="button-creme"
-                  text="Enviar Mensagem"
-                  :foo="sendEmail"
-                ></NotasButton>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </template>
@@ -134,6 +136,7 @@ p
     padding-left: 0
   .row
     padding: 1rem 0
+    flex-grow: 1
 
 input, textarea
   background-color: inherit !important

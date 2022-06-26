@@ -25,7 +25,7 @@ export default {
   <button
     type="button"
     :class="['btn', 'btn-primary', buttonClass]"
-    @click="foo()"
+    @click="(params) => foo(params)"
   >
     {{ text }}
   </button>

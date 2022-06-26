@@ -38,55 +38,57 @@ export default {
               <h3>CONTATO</h3>
             </div>
             <div class="col-md-8 col-lg-8 col-sm-12">
-              <span>
-                Para falar com a gente use a dm do instagram @notaspranotar ou o
-                e-mail notaspranotar@gmail.com
-              </span>
-              <form ref="form" class="my-3">
-                <div class="form-group mb-2 row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Digite seu nome.."
-                        name="from_name"
-                      />
-                    </div>
+              <div class="container">
+                <span>
+                  Para falar com a gente use a dm do instagram @notaspranotar ou
+                  o e-mail notaspranotar@gmail.com
+                </span>
+                <form ref="form" class="my-3">
+                  <div class="form-group mb-2 row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Digite seu nome.."
+                          name="from_name"
+                        />
+                      </div>
 
-                    <div class="form-group mt-2">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter email"
-                        name="reply_to"
-                      />
+                      <div class="form-group mt-2">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter email"
+                          name="reply_to"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-2 mt-lg-0">
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                          placeholder="Digite sua mensagem aqui.."
+                          style="min-height: 95px"
+                          name="message"
+                        ></textarea>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Digite sua mensagem aqui.."
-                        style="min-height: 95px"
-                        name="message"
-                      ></textarea>
-                    </div>
+                  <div class="align-btn-wrapper d-flex justify-content-end">
+                    <NotasButton
+                      buttonClass="button-creme"
+                      text="Enviar Mensagem"
+                      :foo="sendEmail"
+                    ></NotasButton>
                   </div>
-                </div>
-                <div class="align-btn-wrapper d-flex justify-content-end">
-                  <NotasButton
-                    buttonClass="button-creme"
-                    text="Enviar Mensagem"
-                    :foo="sendEmail"
-                  ></NotasButton>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -96,11 +98,11 @@ export default {
     <NotasSection sectionId="rodape">
       <template v-slot:conteudo>
         <div class="row justify-content-start">
-          <div class="col-md-3 col-lg-3 col-sm-3 lado-esquerdo">
+          <div class="col-md-12 col-lg-6 col-sm-12 lado-esquerdo flex-grow-1">
             <img
               src="./assets/imagens/logo-rodape.png"
               alt="logo-rodape"
-              style="max-width: 45%"
+              style="width: 170px"
             />
           </div>
         </div>
@@ -118,6 +120,12 @@ export default {
 
 p
   font-family: Lato !important
+
+@media (max-width: $md)
+  #rodape
+    justify-content: center
+    .lado-esquerdo
+      border-right: none !important
 
 #rodape
   position: sticky

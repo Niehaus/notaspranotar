@@ -13,8 +13,8 @@ export default {
   // Methods are functions that mutate state and trigger updates.
   // They can be bound as event listeners in templates.
   methods: {
-    increment() {
-      this.count++;
+    seeMap() {
+      this.$router.push("/mapa");
     },
   },
   // Lifecycle hooks are called at different stages
@@ -110,13 +110,24 @@ export default {
             <img
               src="../assets/imagens/mapapin.png"
               alt="Pin do Mapa"
-              style="max-width: 120px"
+              style="max-width: 100px"
             />
           </div>
-          <p class="col-md-8 col-lg-8 col-sm-12 lado-texto">
-            Percurso poético da cidade de Pouso Alegre! Para que você saiba onde
-            está cada um de nossos poemas.
-          </p>
+          <div class="col-md-8 col-lg-8 col-sm-12 lado-texto">
+            <div class="container">
+              <p>
+                Percurso poético da cidade de Pouso Alegre! Para que você saiba
+                onde está cada um de nossos poemas.
+              </p>
+              <div class="align-btn-wrapper d-flex justify-content-end">
+                <NotasButton
+                  buttonClass="button-laranja"
+                  text="Ver Mapa"
+                  :foo="seeMap"
+                ></NotasButton>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </template>
@@ -126,6 +137,10 @@ export default {
 <style lang="sass">
 
 @import "../assets/styles/variaveis"
+
+@media (max-width: $md)
+    #header-liner
+      padding-top: 12rem !important
 
 #mapa
   background-color: $notas-azul-background

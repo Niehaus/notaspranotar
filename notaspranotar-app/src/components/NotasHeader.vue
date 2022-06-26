@@ -30,6 +30,12 @@ onMounted(() => {
 
 @import "../assets/styles/variaveis"
 
+@media (max-width: $md)
+    .router-link-wrapper
+      min-width: 100% !important
+      border-top: none !important
+    .brand-wrapper
+      border-right: 4px solid #000 !important
 
 .notas-nav
   background-color: $notas-light-background

@@ -36,7 +36,11 @@ export default {
     <template v-slot:conteudo>
       <div class="row">
         <div class="col-md-6 col-lg-6 col-sm-12 lado-esquerdo">
-          <div class="laura-foto"> foto aqui </div>
+          <img
+            src="../assets/imagens/foto-laura.png"
+            alt="logo-rodape"
+            style="width: 320px"
+          />
           <NotasButton
             buttonClass="button-azul"
             text="laura conti"
@@ -49,17 +53,17 @@ export default {
               contato de TODOS com a literatura, cultura e poesia, do idoso a
               criança que está aprendendo a ler.
             </h4>
-          </div>
-          <div class="button-inline-wrapper px-4">
-            <NotasButton
-              buttonClass="button-laranja"
-              text="insta"
-              style="margin-right: 10px"
-            ></NotasButton>
-            <NotasButton
-              buttonClass="button-laranja"
-              text="email"
-            ></NotasButton>
+            <div class="button-inline-wrapper">
+              <NotasButton
+                buttonClass="button-laranja"
+                text="insta"
+                style="margin-right: 10px"
+              ></NotasButton>
+              <NotasButton
+                buttonClass="button-laranja"
+                text="email"
+              ></NotasButton>
+            </div>
           </div>
         </div>
       </div>
@@ -69,6 +73,13 @@ export default {
 
 <style lang="sass">
 @import "../assets/styles/variaveis"
+
+
+@media (max-width: $md)
+  #sobre
+    .lado-esquerdo
+      border-bottom: 4px solid #000
+
 
 #sobre
   padding: 0 !important

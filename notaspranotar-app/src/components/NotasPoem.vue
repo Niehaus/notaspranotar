@@ -8,16 +8,8 @@ export default {
   },
   components: { NotasButton },
   methods: {
-    audioFoo(message) {
-      console.log(message);
-      this.$emit("modalChange", "audio");
-    },
-    textFoo(message) {
-      console.log(message);
-      this.$emit("modalChange", "text");
-    },
-    setupModal({ type, content }) {
-      this.$emit("modalChange", { type, content });
+    setupModal({ text, audio }) {
+      this.$emit("modalChange", { text, audio });
     },
   },
 };
@@ -32,15 +24,8 @@ export default {
     <div class="action-btn-wrapper">
       <NotasButton
         buttonClass="button-laranja"
-        text="audio"
-        :foo="() => setupModal({ type: 'audio', content: poem.audioPath })"
-        data-bs-toggle="modal"
-        :data-bs-target="`#modal-poem`"
-      ></NotasButton>
-      <NotasButton
-        buttonClass="button-laranja"
-        text="texto"
-        :foo="() => setupModal({ type: 'text', content: poem.text })"
+        text="audio/texto"
+        :foo="() => setupModal({ text: poem.text, audio: poem.audioPath })"
         data-bs-toggle="modal"
         :data-bs-target="`#modal-poem`"
       ></NotasButton>

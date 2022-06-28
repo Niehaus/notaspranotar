@@ -3,6 +3,9 @@ import jquery from "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
+import VuePlyr from "vue-plyr";
+import "vue-plyr/dist/vue-plyr.css";
+
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
@@ -25,6 +28,7 @@ app.component("NotasSection", NotasSection);
 app.component("NotasButton", NotasButton);
 app.component("NotasHeader", NotasHeader);
 
+app.use(VuePlyr, { plyr: {} });
 app.use(createPinia());
 app.use(router);
 

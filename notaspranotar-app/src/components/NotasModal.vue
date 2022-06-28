@@ -14,7 +14,17 @@ export default {
     },
   },
   components: { NotasButton },
-  methods: {},
+  watch: {
+    // whenever audio changes, this function will run
+    audio(newAudio, oldAudio) {
+      let audio = document.querySelector("audio");
+
+      if (audio != undefined && audio != null) {
+        audio.src = newAudio;
+        audio.load();
+      }
+    },
+  },
 };
 </script>
 
@@ -40,8 +50,15 @@ export default {
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">{{ text }}</div>
-        <div class="modal-footer"></div>
+        <div class="modal-body text-justify">{{ text }}</div>
+        <div class="modal-footer">
+          <!-- audio element -->
+          <vue-plyr ref="plyr">
+            <audio controls crossorigin playsinline>
+              <source :src="audio" type="audio/wav" />
+            </audio>
+          </vue-plyr>
+        </div>
       </div>
     </div>
   </div>
@@ -73,8 +90,17 @@ export default {
 .poem-wrapper
   display: flex
   flex-direction: column
-  max-width: 275px
+  max-width: 300px
   margin: 0 10px
   & *
     margin-top: 10px
+
+
+.plyr__controls
+  border: 4px solid #000
+  // background-color: $notas-laranja-background !important
+
+.plyr__progress, .plyr__controls__item
+  input
+    border: none !important
 </style>

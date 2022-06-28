@@ -23,14 +23,9 @@ export default {
     },
   },
   methods: {
-    modalChangeEvent({ type, content }) {
-      if (type == "audio") {
-        this.audio = content;
-        this.text = "";
-      } else {
-        this.audio = "";
-        this.text = content;
-      }
+    modalChangeEvent({ text, audio }) {
+      this.audio = audio;
+      this.text = text;
     },
   },
 };
@@ -41,7 +36,7 @@ export default {
     <template v-slot:conteudo>
       <div class="container text-center">
         <h2>POEMAS</h2>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-2">
           <NotasModal :text="currentText" :audio="currentAudio"></NotasModal>
           <template v-for="(poem, index) in poems" v-bind:key="index">
             <NotasPoem

@@ -5,7 +5,6 @@ import emailjs from "@emailjs/browser";
 export default {
   methods: {
     sendEmail() {
-      console.log("envia!");
       emailjs
         .sendForm(
           "service_rckxzyn",
@@ -16,9 +15,11 @@ export default {
         .then(
           (result) => {
             console.log("SUCCESS!", result.text);
+            alert("Messagem Enviada com Sucesso!");
           },
           (error) => {
-            console.log("FAILED...", error.text);
+            console.error("FAILED...", error.text);
+            alert("Erro ao enviar mensagem, tente novamente!");
           }
         );
     },

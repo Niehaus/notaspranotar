@@ -19,8 +19,11 @@ export default {
 </template>
 
 <style lang="sass">
-/* .notas-section
-  padding: 3rem */
+@import "../assets/styles/variaveis"
+
+@media (max-width: $sm)
+    .notas-section-cf
+      padding: 0 1rem !important
 
 .notas-section-cf
   padding: 0

@@ -10,9 +10,14 @@ export default {
   methods: {
     audioFoo(message) {
       console.log(message);
+      this.$emit("modalChange", "audio");
     },
     textFoo(message) {
       console.log(message);
+      this.$emit("modalChange", "text");
+    },
+    setupModal({ type, content }) {
+      this.$emit("modalChange", { type, content });
     },
   },
 };
@@ -20,40 +25,6 @@ export default {
 
 <template>
   <!-- Modal -->
-  <div
-    class="modal fade"
-    :id="`modal-${poem.name}`"
-    tabindex="-1"
-    :aria-labelledby="`modal-${poem.name}`"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" :id="`modal-${poem.name}`">
-            {{ poem.name }}
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">{{ poem.text }}</div>
-        <div class="modal-footer" v-if="poem.audioPath != ''">
-          <!--  <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button> -->
-        </div>
-      </div>
-    </div>
-  </div>
-
   <span class="poem-wrapper">
     <div class="card card-body card-img">
       <img :src="poem.imgPath" :alt="poem.name" />
@@ -62,16 +33,16 @@ export default {
       <NotasButton
         buttonClass="button-laranja"
         text="audio"
-        :foo="() => audioFoo('play audio!')"
+        :foo="() => setupModal({ type: 'audio', content: poem.audioPath })"
         data-bs-toggle="modal"
-        :data-bs-target="`#modal-${poem.name}`"
+        :data-bs-target="`#modal-poem`"
       ></NotasButton>
       <NotasButton
         buttonClass="button-laranja"
         text="texto"
-        :foo="() => textFoo('read text!')"
+        :foo="() => setupModal({ type: 'text', content: poem.text })"
         data-bs-toggle="modal"
-        :data-bs-target="`#modal-${poem.name}`"
+        :data-bs-target="`#modal-poem`"
       ></NotasButton>
     </div>
   </span>

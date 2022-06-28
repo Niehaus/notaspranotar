@@ -114,12 +114,13 @@ export default {
 <style lang="sass">
 @import "@/assets/reset.css"
 @import "./assets/styles/variaveis"
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
 
 #app
   font-family: $type-writer
 
 p
-  font-family: Lato !important
+  font-family: Roboto !important
 
 @media (max-width: $md)
   #rodape

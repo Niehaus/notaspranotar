@@ -4,7 +4,12 @@ import NotasButton from "../components/NotasButton.vue";
 
 export default {
   data() {
-    return {};
+    return {
+      myWindow: undefined,
+    };
+  },
+  mounted() {
+    this.myWindow = window;
   },
   components: { NotasSection, NotasButton },
 };
@@ -18,7 +23,7 @@ export default {
           <h5 class="mb-3">
             O notaspranotar é um projeto literário craido pela laura conti para
             compartilhar palavras de encanto e expressões. O projeto é
-            financiado pela Prefeitura Municipal de Pouso Alegre, por meio do
+            patrocinado pela Prefeitura Municipal de Pouso Alegre, por meio do
             edtail da Lei Municipal de Incentivo á Cultura, da Superintendência
             de Cultura.
           </h5>
@@ -44,13 +49,20 @@ export default {
           <NotasButton
             buttonClass="button-azul"
             text="laura conti"
+            :foo="
+              () =>
+                this.myWindow.open(
+                  'https://www.instagram.com/alauraconti/',
+                  '_blank'
+                )
+            "
           ></NotasButton>
         </div>
         <div class="col-md-6 col-lg-6 col-sm-12 lado-direito">
           <div class="container">
             <h4 class="my-3 text-left">
               O <b>notaspranotar</b> nasceu para incentivar e estimular o
-              contato de TODOS com a literatura, cultura e poesia, do idoso a
+              contato de TODES com a literatura, cultura e poesia, do idoso a
               criança que está aprendendo a ler.
             </h4>
             <div class="button-inline-wrapper">
@@ -58,10 +70,20 @@ export default {
                 buttonClass="button-laranja"
                 text="insta"
                 style="margin-right: 10px"
+                :foo="
+                  () =>
+                    this.myWindow.open(
+                      'https://www.instagram.com/notaspranotar/',
+                      '_blank'
+                    )
+                "
               ></NotasButton>
               <NotasButton
                 buttonClass="button-laranja"
                 text="email"
+                :foo="
+                  () => this.myWindow.open('mailto:notaspranotar@gmail.com', '')
+                "
               ></NotasButton>
             </div>
           </div>

@@ -106,6 +106,13 @@ export default {
               style="width: 170px"
             />
           </div>
+          <div class="col-md-12 col-lg-6 col-sm-12 text-center">
+            <img
+              src="./assets/imagens/lmic.png"
+              alt="Logos LMIC"
+              style="width: 350px"
+            />
+          </div>
         </div>
       </template>
     </NotasSection>
@@ -129,6 +136,12 @@ p
     .lado-esquerdo
       border-right: none !important
 
+@media (max-width: 1000px)
+  #rodape
+    justify-content: center
+    .lado-esquerdo
+      border-right: none !important
+
 #rodape
   position: sticky
   bottom: 0
@@ -139,6 +152,7 @@ p
   .lado-esquerdo
      border-right: 4px solid #000
      padding: 1rem
+     text-align: center
 
 #contato
   border-bottom: none

@@ -16,13 +16,17 @@ export default {
     seeMap() {
       this.$router.push("/mapa");
     },
+    seeAbout() {
+      this.$router.push("/sobre");
+    },
+    seePoems() {
+      this.$router.push("/poemas");
+    },
   },
   // Lifecycle hooks are called at different stages
   // of a component's lifecycle.
   // This function will be called when the component is mounted.
-  mounted() {
-    console.log(`hello homee!!`);
-  },
+  mounted() {},
   components: { NotasSection, NotasButton },
 };
 </script>
@@ -39,7 +43,11 @@ export default {
               do Edital 004/2021 - Lei de Incentivo à Cultura: FPC - Fundo de
               Projetos Culturais
             </p>
-            <NotasButton buttonClass="button-creme"></NotasButton>
+            <NotasButton
+              buttonClass="button-creme"
+              text="Ver Mais"
+              :foo="seeAbout"
+            ></NotasButton>
           </div>
         </div>
       </div>
@@ -56,7 +64,11 @@ export default {
             conti ilustrados pela Malu Marzagão. Além de disponíveis nas ruas da
             cidade, aqui você encontra todos eles ilustrados e recitados!
           </p>
-          <NotasButton buttonClass="button-azul"></NotasButton>
+          <NotasButton
+            buttonClass="button-azul"
+            text="Ver Poemas"
+            :foo="seePoems"
+          ></NotasButton>
         </div>
         <div class="col-md-8 col-lg-8 col-sm-12 lado-direito">
           <!-- <img src="../assets/imagens/poema9.jpg" class="img-esquerda" alt="Imagem-1" />

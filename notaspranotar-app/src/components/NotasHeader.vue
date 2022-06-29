@@ -19,7 +19,7 @@ onMounted(() => {
           <RouterLink to="/sobre">Sobre</RouterLink>
           <RouterLink to="/poemas">Poemas</RouterLink>
           <RouterLink to="/mapa">Mapa</RouterLink>
-          <RouterLink to="/contato">Contato</RouterLink>
+          <!-- <RouterLink to="/contato">Contato</RouterLink> -->
         </form>
       </div>
     </nav>

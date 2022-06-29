@@ -14,6 +14,13 @@ export default {
     },
   },
   components: { NotasButton },
+  methods: {
+    stopAudio() {
+      if (this.$refs.plyr != undefined) {
+        this.$refs.plyr.player.pause();
+      }
+    },
+  },
   watch: {
     // whenever audio changes, this function will run
     audio(newAudio, oldAudio) {
@@ -25,6 +32,7 @@ export default {
       }
     },
   },
+  mounted() {},
 };
 </script>
 
@@ -36,6 +44,8 @@ export default {
     tabindex="-1"
     :aria-labelledby="`modal-poem`"
     aria-hidden="true"
+    :data-bs-keyboard="false"
+    data-bs-backdrop="static"
   >
     <div class="modal-dialog">
       <div class="modal-content">
@@ -48,9 +58,16 @@ export default {
             class="btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
+            @click="
+              () => {
+                this.stopAudio();
+              }
+            "
           ></button>
         </div>
-        <div class="modal-body text-justify">{{ text }}</div>
+        <div class="modal-body text-justify d-flex justify-content-center">
+          <div v-html="text" style="width: 240px"></div>
+        </div>
         <div class="modal-footer">
           <!-- audio element -->
           <vue-plyr ref="plyr">
@@ -67,6 +84,9 @@ export default {
 <style lang="sass">
 @import "../assets/styles/variaveis"
 
+.modal-body
+  max-height: 400px
+  overflow: auto
 .modal-dialog, .modal-content
   background-color: $notas-light-background
   border-radius: 0
@@ -94,6 +114,11 @@ export default {
   margin: 0 10px
   & *
     margin-top: 10px
+
+.estrofe
+  margin-bottom: 20px
+  display: block
+  text-align: justify
 
 
 .plyr__controls

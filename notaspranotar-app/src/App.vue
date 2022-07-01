@@ -3,8 +3,15 @@ import { RouterView } from "vue-router";
 import emailjs from "@emailjs/browser";
 
 export default {
+  data() {
+    return {
+      messageText: "Enviar Mensagem",
+    };
+  },
   methods: {
     sendEmail() {
+      this.messageText = "Enviando Mensagem...";
+
       emailjs
         .sendForm(
           "service_rckxzyn",
@@ -15,10 +22,12 @@ export default {
         .then(
           (result) => {
             console.log("SUCCESS!", result.text);
+            this.messageText = "Enviar Mensagem";
             alert("Messagem Enviada com Sucesso!");
           },
           (error) => {
             console.error("FAILED...", error.text);
+            this.messageText = "Enviar Mensagem";
             alert("Erro ao enviar mensagem, tente novamente!");
           }
         );
@@ -84,7 +93,7 @@ export default {
                   <div class="align-btn-wrapper d-flex justify-content-end">
                     <NotasButton
                       buttonClass="button-creme"
-                      text="Enviar Mensagem"
+                      :text="messageText"
                       :foo="sendEmail"
                     ></NotasButton>
                   </div>

@@ -55,8 +55,404 @@ SÓIS.
     audioPath: `${audioBaseUrl}/poema3-seraQueGiraSois.wav`,
   },
   {
-    name: "poema4",
-    imgPath: `${imgBaseUrl}/poema4.jpg`,
+    name: "poema4-1",
+    imgPath: `${imgBaseUrl}/poema4-1.png`,
+    text: `
+<span class="estrofe">
+passei anos sabendo descansar<br>
+essa saudade<br>
+anos me distraindo<br>
+do cansaço<br>
+que essa saudade<br>
+pode ser
+<span>
+
+<span class="estrofe">
+em realidade,<br>
+passei anos me distraindo da saudade.<br>
+<span>
+
+<span class="estrofe">
+talvez minha geração inteira tenha perdido<br>
+a habilidade do descanso.<br>
+do sossego.<br>
+o fôlego é tão difícil de segurar,<br>
+que vive-se de alívio.<br>
+e distração.
+<span>
+
+<span class="estrofe">
+vivo<br>
+de ocupar os espaços entre<br>
+uma batida forte e outra do coração.<br>
+cada uma delas me negritando<br>
+saudade.
+<span>
+
+<span class="estrofe">
+nas brechinhas ao invés do descanso.<br>
+do fôlego.<br>
+eu torço pra me distrair<br>
+e aliviar.
+<span>
+
+<span class="estrofe">
+escrevo em dúvida<br>
+se quero<br>
+me distrair ou<br>
+me descansar<br>
+nas palavras.
+<span>
+
+<span class="estrofe">
+escrevo atenta às palavras<br>
+e talvez fizesse tempo demais<br>
+que não escrevesse<br>
+assim
+<span>
+
+<span class="estrofe">
+como<br>
+tempo demais nunca serviu<br>
+pra saudade encontrar sossego<br>
+permanente.
+<span>
+
+<span class="estrofe">
+sempre se mexe.<br>
+o estático é impossível pro que vive.<br>
+toda vida é movimento, 
+<span>
+
+<span class="estrofe">
+ainda que não se veja.<br>
+afinal, ver é um dos sentidos mais bobos<br>
+e hipervalorizados que se tem.
+<span>
+
+<span class="estrofe">
+fico me enfiando série,<br>
+música,<br>
+poesia,<br>
+ocupações,<br>
+planos,<br>
+complicações,<br>
+relações,<br>
+pessoas,<br>
+convencimentos,<br>
+planilhas,
+<span>
+
+<span class="estrofe">
+eu fico me enfiando coisa<br>
+pra ver se eu loto.<br>
+quem sabe assim<br>
+expulso a saudade<br>
+imperativa.
+<span>
+
+<span class="estrofe">
+que fica<br>
+o dia e a noite toda<br>
+nos arrepios finos da pele<br>
+se deixo de distrair<br>
+y descanso para sentir:<br>
+choro.
+<span>
+
+<span class="estrofe">
+o vento vira água rápido.<br>
+nessa história minha mágica ou maldição<br>
+é que o fluido torna-se denso<br>
+fácil.
+<span>
+
+<span class="estrofe">
+eu só queria agora um beijo.<br>
+nem isso,<br>
+uma olhada que fosse<br>
+até mesmo um som de longe que eu<br>
+reconhecesse<br>
+qualquer coisa, eu queria mesmo<br>
+q u a l q u e r c o i s a que me fizesse ter
+<span>
+
+<span class="estrofe">
+a saudade<br>
+aqui.<br>
+ao invés<br>
+de lá.
+<span> 
+`,
+    audioPath: `${audioBaseUrl}/poema4-geracaoInteira.wav`,
+  },
+  {
+    name: "poema4-2",
+    imgPath: `${imgBaseUrl}/poema4-2.png`,
+    text: `
+<span class="estrofe">
+passei anos sabendo descansar<br>
+essa saudade<br>
+anos me distraindo<br>
+do cansaço<br>
+que essa saudade<br>
+pode ser
+<span>
+
+<span class="estrofe">
+em realidade,<br>
+passei anos me distraindo da saudade.<br>
+<span>
+
+<span class="estrofe">
+talvez minha geração inteira tenha perdido<br>
+a habilidade do descanso.<br>
+do sossego.<br>
+o fôlego é tão difícil de segurar,<br>
+que vive-se de alívio.<br>
+e distração.
+<span>
+
+<span class="estrofe">
+vivo<br>
+de ocupar os espaços entre<br>
+uma batida forte e outra do coração.<br>
+cada uma delas me negritando<br>
+saudade.
+<span>
+
+<span class="estrofe">
+nas brechinhas ao invés do descanso.<br>
+do fôlego.<br>
+eu torço pra me distrair<br>
+e aliviar.
+<span>
+
+<span class="estrofe">
+escrevo em dúvida<br>
+se quero<br>
+me distrair ou<br>
+me descansar<br>
+nas palavras.
+<span>
+
+<span class="estrofe">
+escrevo atenta às palavras<br>
+e talvez fizesse tempo demais<br>
+que não escrevesse<br>
+assim
+<span>
+
+<span class="estrofe">
+como<br>
+tempo demais nunca serviu<br>
+pra saudade encontrar sossego<br>
+permanente.
+<span>
+
+<span class="estrofe">
+sempre se mexe.<br>
+o estático é impossível pro que vive.<br>
+toda vida é movimento, 
+<span>
+
+<span class="estrofe">
+ainda que não se veja.<br>
+afinal, ver é um dos sentidos mais bobos<br>
+e hipervalorizados que se tem.
+<span>
+
+<span class="estrofe">
+fico me enfiando série,<br>
+música,<br>
+poesia,<br>
+ocupações,<br>
+planos,<br>
+complicações,<br>
+relações,<br>
+pessoas,<br>
+convencimentos,<br>
+planilhas,
+<span>
+
+<span class="estrofe">
+eu fico me enfiando coisa<br>
+pra ver se eu loto.<br>
+quem sabe assim<br>
+expulso a saudade<br>
+imperativa.
+<span>
+
+<span class="estrofe">
+que fica<br>
+o dia e a noite toda<br>
+nos arrepios finos da pele<br>
+se deixo de distrair<br>
+y descanso para sentir:<br>
+choro.
+<span>
+
+<span class="estrofe">
+o vento vira água rápido.<br>
+nessa história minha mágica ou maldição<br>
+é que o fluido torna-se denso<br>
+fácil.
+<span>
+
+<span class="estrofe">
+eu só queria agora um beijo.<br>
+nem isso,<br>
+uma olhada que fosse<br>
+até mesmo um som de longe que eu<br>
+reconhecesse<br>
+qualquer coisa, eu queria mesmo<br>
+q u a l q u e r c o i s a que me fizesse ter
+<span>
+
+<span class="estrofe">
+a saudade<br>
+aqui.<br>
+ao invés<br>
+de lá.
+<span> 
+`,
+    audioPath: `${audioBaseUrl}/poema4-geracaoInteira.wav`,
+  },
+  {
+    name: "poema4-3",
+    imgPath: `${imgBaseUrl}/poema4-3.png`,
+    text: `
+<span class="estrofe">
+passei anos sabendo descansar<br>
+essa saudade<br>
+anos me distraindo<br>
+do cansaço<br>
+que essa saudade<br>
+pode ser
+<span>
+
+<span class="estrofe">
+em realidade,<br>
+passei anos me distraindo da saudade.<br>
+<span>
+
+<span class="estrofe">
+talvez minha geração inteira tenha perdido<br>
+a habilidade do descanso.<br>
+do sossego.<br>
+o fôlego é tão difícil de segurar,<br>
+que vive-se de alívio.<br>
+e distração.
+<span>
+
+<span class="estrofe">
+vivo<br>
+de ocupar os espaços entre<br>
+uma batida forte e outra do coração.<br>
+cada uma delas me negritando<br>
+saudade.
+<span>
+
+<span class="estrofe">
+nas brechinhas ao invés do descanso.<br>
+do fôlego.<br>
+eu torço pra me distrair<br>
+e aliviar.
+<span>
+
+<span class="estrofe">
+escrevo em dúvida<br>
+se quero<br>
+me distrair ou<br>
+me descansar<br>
+nas palavras.
+<span>
+
+<span class="estrofe">
+escrevo atenta às palavras<br>
+e talvez fizesse tempo demais<br>
+que não escrevesse<br>
+assim
+<span>
+
+<span class="estrofe">
+como<br>
+tempo demais nunca serviu<br>
+pra saudade encontrar sossego<br>
+permanente.
+<span>
+
+<span class="estrofe">
+sempre se mexe.<br>
+o estático é impossível pro que vive.<br>
+toda vida é movimento, 
+<span>
+
+<span class="estrofe">
+ainda que não se veja.<br>
+afinal, ver é um dos sentidos mais bobos<br>
+e hipervalorizados que se tem.
+<span>
+
+<span class="estrofe">
+fico me enfiando série,<br>
+música,<br>
+poesia,<br>
+ocupações,<br>
+planos,<br>
+complicações,<br>
+relações,<br>
+pessoas,<br>
+convencimentos,<br>
+planilhas,
+<span>
+
+<span class="estrofe">
+eu fico me enfiando coisa<br>
+pra ver se eu loto.<br>
+quem sabe assim<br>
+expulso a saudade<br>
+imperativa.
+<span>
+
+<span class="estrofe">
+que fica<br>
+o dia e a noite toda<br>
+nos arrepios finos da pele<br>
+se deixo de distrair<br>
+y descanso para sentir:<br>
+choro.
+<span>
+
+<span class="estrofe">
+o vento vira água rápido.<br>
+nessa história minha mágica ou maldição<br>
+é que o fluido torna-se denso<br>
+fácil.
+<span>
+
+<span class="estrofe">
+eu só queria agora um beijo.<br>
+nem isso,<br>
+uma olhada que fosse<br>
+até mesmo um som de longe que eu<br>
+reconhecesse<br>
+qualquer coisa, eu queria mesmo<br>
+q u a l q u e r c o i s a que me fizesse ter
+<span>
+
+<span class="estrofe">
+a saudade<br>
+aqui.<br>
+ao invés<br>
+de lá.
+<span> 
+`,
+    audioPath: `${audioBaseUrl}/poema4-geracaoInteira.wav`,
+  },
+  {
+    name: "poema4-4",
+    imgPath: `${imgBaseUrl}/poema4-4.jpg`,
     text: `
 <span class="estrofe">
 passei anos sabendo descansar<br>
@@ -224,7 +620,7 @@ somos é impermanentes
   },
   {
     name: "poema7",
-    imgPath: `${imgBaseUrl}/poema7.jpg`,
+    imgPath: `${imgBaseUrl}/poema7.png`,
     text: `
 <span class="estrofe">
 iansã me<br> 
@@ -241,7 +637,7 @@ busca<br>
   },
   {
     name: "poema8",
-    imgPath: `${imgBaseUrl}/poema8.jpg`,
+    imgPath: `${imgBaseUrl}/poema8.png`,
     text: `
 <span class="estrofe">imensas
 <span>
@@ -372,8 +768,8 @@ coragem de ser o que sente.
     audioPath: `${audioBaseUrl}/poema9-CoragemDeSerOqSente.wav`,
   },
   {
-    name: "poema10",
-    imgPath: `${imgBaseUrl}/poema10.jpg`,
+    name: "poema10-1",
+    imgPath: `${imgBaseUrl}/poema10-1.png`,
     text: `
 <span class="estrofe">
 dançar o ocidente<br>
@@ -417,8 +813,96 @@ de m/fim
     audioPath: `${audioBaseUrl}/poema10.wav`,
   },
   {
-    name: "poema11",
-    imgPath: `${imgBaseUrl}/poema11.jpg`,
+    name: "poema10-2",
+    imgPath: `${imgBaseUrl}/poema10-2.png`,
+    text: `
+<span class="estrofe">
+dançar o ocidente<br>
+num existir não hegemônico<br>
+ser sonho<br>
+numa terra de pesadelo<br>
+ainda que fértil se prove<br>
+o gosto de um passado<br>
+amarrado<br>
+o peso da indigestão<br>
+do que impregna<br>
+na mão que limpa<br>
+pelo cheiro de livre<br>
+quanto de si<br>
+negocia?<br>
+tem Amazonas<br>
+e eu Atlântico<br>
+Atlântica<br>
+e meu Amazonas<br>
+entre a corrente<br>
+e o cordão<br>
+mansa musa<br>
+e capião<br>
+o quilombo queima<br>
+quanto?<br>
+o manifesto vai imprimir<br>
+até quando?<br>
+quanto custa ficar de pé<br>
+se a corda<br>
+bamba<br>
+enlaça<br>
+garganta<br>
+qual o preço de ser<br>
+inteira<br>
+feita de retalhos<br>
+lapsos, gametas e cacos<br>
+daqui, de lá<br>
+de m/fim
+<span>
+`,
+    audioPath: `${audioBaseUrl}/poema10.wav`,
+  },
+  {
+    name: "poema11-1",
+    imgPath: `${imgBaseUrl}/poema11-1.png`,
+    text: `
+<span class="estrofe">
+dar conta da inconsequência<br>  
+enquanto a idade justifica o desassossego <br> 
+enquanto o que conforma<br>  
+não forma<br>  
+conforto<br>  
+no corpo. 
+</span>
+
+<span class="estrofe">
+enquanto a adultice<br>  
+não me adultera. 
+</span>
+
+<span class="estrofe">
+se a vida é viver.<br>  
+por que é tão difícil honrá-la? 
+</span>
+
+<span class="estrofe">
+sentir-se vive.<br>  
+custa mais.<br>  
+que se sentir fazendo o que tem que fazer<br>  
+da vida. 
+</span>
+
+<span class="estrofe">
+fazer da vida.<br>  
+algo que não vivê-la.
+</span> 
+
+<span class="estrofe">
+adulterar.<br>  
+adultecer.<br>  
+adulta.
+</span> 
+`,
+    audioPath: `${audioBaseUrl}/poema11-adulta.wav`,
+  },
+  {
+    name: "poema11-2",
+    imgPath: `${imgBaseUrl}/poema11-2.png`,
     text: `
 <span class="estrofe">
 dar conta da inconsequência<br>  

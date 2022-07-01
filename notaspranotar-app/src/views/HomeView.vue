@@ -1,13 +1,14 @@
 <script>
 import NotasSection from "../components/NotasSection.vue";
 import NotasButton from "../components/NotasButton.vue";
+import poems from "../assets/js/poems.js";
 
 export default {
   // Properties returned from data() becomes reactive state
   // and will be exposed on `this`.
   data() {
     return {
-      count: 0,
+      poems: poems,
     };
   },
   // Methods are functions that mutate state and trigger updates.
@@ -56,55 +57,31 @@ export default {
 
   <NotasSection sectionId="poemas">
     <template v-slot:conteudo>
-      <div class="row">
-        <div class="col-md-4 col-lg-4 col-sm-12 lado-esquerdo">
-          <h1>POEMAS</h1>
-          <p class="my-3">
-            Nessa primeira edição do projeto, contamos com os versos de laura
-            conti ilustrados pela Malu Marzagão. Além de disponíveis nas ruas da
-            cidade, aqui você encontra todos eles ilustrados e recitados!
-          </p>
-          <NotasButton
-            buttonClass="button-azul"
-            text="Ver Poemas"
-            :foo="seePoems"
-          ></NotasButton>
-        </div>
-        <div class="col-md-8 col-lg-8 col-sm-12 lado-direito">
-          <!-- <img src="../assets/imagens/poema9.jpg" class="img-esquerda" alt="Imagem-1" />
-            <img src="../assets/imagens/poema11.jpg" class="img-direita" alt="Imagem-2" /> -->
-
-          <div
-            class="container overflow-auto img-container"
-            style="max-width: 1920px"
-          >
-            <div class="d-flex flex-row flex-nowrap">
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema9.jpg" alt="Imagem-1" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
-              </div>
-              <div class="card card-body card-img">
-                <img src="../assets/imagens/poema11.jpg" alt="Imagem-2" />
+      <div class="conatiner">
+        <div class="row flex-grow-1">
+          <div class="col-md-12 col-lg-4 col-sm-12 lado-esquerdo">
+            <h1>POEMAS</h1>
+            <p class="my-3">
+              Nessa primeira edição do projeto, contamos com os versos de laura
+              conti ilustrados pela Malu Marzagão. Além de disponíveis nas ruas
+              da cidade, aqui você encontra todos eles ilustrados e recitados!
+            </p>
+            <NotasButton
+              buttonClass="button-azul"
+              text="Ver Poemas"
+              :foo="seePoems"
+            ></NotasButton>
+          </div>
+          <div class="col-md-8 col-lg-8 col-sm-12 lado-direito">
+            <div class="container overflow-auto img-container">
+              <div class="d-flex flex-row flex-nowrap">
+                <div
+                  v-for="(item, i) in poems"
+                  class="card card-body card-img"
+                  v-bind:key="i"
+                >
+                  <img :src="item.imgPath" alt="Imagem-1" />
+                </div>
               </div>
             </div>
           </div>
@@ -117,21 +94,21 @@ export default {
     <template v-slot:conteudo>
       <div class="container">
         <div class="row flex-grow-1">
-          <div class="col-md-4 col-lg-4 col-sm-12 lado-mapa">
+          <div class="col-md-12 col-lg-4 col-sm-12 lado-mapa">
             <h1>MAPA</h1>
             <img
               src="../assets/imagens/mapapin.png"
               alt="Pin do Mapa"
-              style="max-width: 100px"
+              style="max-width: 50px; padding-bottom: 15px"
             />
           </div>
-          <div class="col-md-8 col-lg-8 col-sm-12 lado-texto">
+          <div class="col-md-12 col-lg-8 col-sm-12 lado-texto">
             <div class="container">
               <p>
                 Percurso poético da cidade de Pouso Alegre! Para que você saiba
                 onde está cada um de nossos poemas.
               </p>
-              <div class="align-btn-wrapper d-flex justify-content-end">
+              <div class="align-btn-wrapper d-flex justify-content-start mt-3">
                 <NotasButton
                   buttonClass="button-laranja"
                   text="Ver Mapa"
@@ -150,9 +127,27 @@ export default {
 
 @import "../assets/styles/variaveis"
 
-@media (max-width: $md)
+@media (max-width: 1000px)
     #header-liner
       padding-top: 12rem !important
+    #mapa
+      .lado-mapa
+            justify-content: center
+            border-right: none !important
+            padding: 0 !important
+    .align-btn-wrapper
+      justify-content: center !important
+      padding: 25px 0
+      margin-top: 15px
+    #contato
+      .lado-esquerdo
+        text-align: center
+        margin: 15px 0
+    #poemas
+      padding: 0 !important
+    .img-container
+      left: 0px !important
+      // max-width: 100vw !important
 
 #mapa
   background-color: $notas-azul-background
@@ -183,27 +178,26 @@ export default {
   min-height: 650px
 
 #poemas
-  padding: 0 !important
+  // padding: 0 !important
   overflow: hidden
-  background-color: $notas-light-background
+  background-color: $notas-laranja-background
   .lado-esquerdo
     background-color: $notas-laranja-background
-    padding: 6rem
+    padding: 3rem
   .lado-direito
     background-color: $notas-light-background
-    padding: 6rem
+    padding: 3rem 0
     border-left: 4px solid #000
   img
     width: 275px
-    // margin: 10px
     &.img-esquerda, &.img-direita
       position: relative
       left: -80px
 
-    // &.img-direita
 .img-container
       position: relative
-      left: -100px
+      left: -50px
+      max-width: 100vw
 
 .card-body
   min-height: 240px

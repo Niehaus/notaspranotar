@@ -56,7 +56,7 @@ SÓIS.
   },
   {
     name: "poema4-1",
-    imgPath: `${imgBaseUrl}/poema4-1.png`,
+    imgPath: `${imgBaseUrl}/poema4-1.jpg`,
     text: `
 <span class="estrofe">
 passei anos sabendo descansar<br>
@@ -188,7 +188,7 @@ de lá.
   },
   {
     name: "poema4-2",
-    imgPath: `${imgBaseUrl}/poema4-2.png`,
+    imgPath: `${imgBaseUrl}/poema4-2.jpg`,
     text: `
 <span class="estrofe">
 passei anos sabendo descansar<br>
@@ -320,7 +320,7 @@ de lá.
   },
   {
     name: "poema4-3",
-    imgPath: `${imgBaseUrl}/poema4-3.png`,
+    imgPath: `${imgBaseUrl}/poema4-3.jpg`,
     text: `
 <span class="estrofe">
 passei anos sabendo descansar<br>
@@ -620,7 +620,7 @@ somos é impermanentes
   },
   {
     name: "poema7",
-    imgPath: `${imgBaseUrl}/poema7.png`,
+    imgPath: `${imgBaseUrl}/poema7.jpg`,
     text: `
 <span class="estrofe">
 iansã me<br> 
@@ -637,7 +637,7 @@ busca<br>
   },
   {
     name: "poema8",
-    imgPath: `${imgBaseUrl}/poema8.png`,
+    imgPath: `${imgBaseUrl}/poema8.jpg`,
     text: `
 <span class="estrofe">imensas
 <span>
@@ -769,7 +769,7 @@ coragem de ser o que sente.
   },
   {
     name: "poema10-1",
-    imgPath: `${imgBaseUrl}/poema10-1.png`,
+    imgPath: `${imgBaseUrl}/poema10-1.jpg`,
     text: `
 <span class="estrofe">
 dançar o ocidente<br>
@@ -814,7 +814,7 @@ de m/fim
   },
   {
     name: "poema10-2",
-    imgPath: `${imgBaseUrl}/poema10-2.png`,
+    imgPath: `${imgBaseUrl}/poema10-2.jpg`,
     text: `
 <span class="estrofe">
 dançar o ocidente<br>
@@ -859,7 +859,7 @@ de m/fim
   },
   {
     name: "poema11-1",
-    imgPath: `${imgBaseUrl}/poema11-1.png`,
+    imgPath: `${imgBaseUrl}/poema11-1.jpg`,
     text: `
 <span class="estrofe">
 dar conta da inconsequência<br>  
@@ -902,7 +902,7 @@ adulta.
   },
   {
     name: "poema11-2",
-    imgPath: `${imgBaseUrl}/poema11-2.png`,
+    imgPath: `${imgBaseUrl}/poema11-2.jpg`,
     text: `
 <span class="estrofe">
 dar conta da inconsequência<br>  

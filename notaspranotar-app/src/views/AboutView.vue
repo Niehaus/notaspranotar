@@ -21,10 +21,10 @@ export default {
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-12">
           <h5 class="mb-3">
-            O notaspranotar é um projeto literário craido pela laura conti para
+            O notaspranotar é um projeto literário criado pela laura conti para
             compartilhar palavras de encanto e expressões. O projeto é
             patrocinado pela Prefeitura Municipal de Pouso Alegre, por meio do
-            edtail da Lei Municipal de Incentivo á Cultura, da Superintendência
+            edital da Lei Municipal de Incentivo á Cultura, da Superintendência
             de Cultura.
           </h5>
           <h5 class="mb-3">

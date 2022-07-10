@@ -620,7 +620,7 @@ somos é impermanentes
   },
   {
     name: "poema7",
-    imgPath: `${imgBaseUrl}/poema7.jpg`,
+    imgPath: `${imgBaseUrl}/poema7.png`,
     text: `
 <span class="estrofe">
 iansã me<br> 
@@ -637,7 +637,7 @@ busca<br>
   },
   {
     name: "poema8",
-    imgPath: `${imgBaseUrl}/poema8.jpg`,
+    imgPath: `${imgBaseUrl}/poema8.png`,
     text: `
 <span class="estrofe">imensas
 <span>
@@ -769,7 +769,7 @@ coragem de ser o que sente.
   },
   {
     name: "poema10-1",
-    imgPath: `${imgBaseUrl}/poema10-1.jpg`,
+    imgPath: `${imgBaseUrl}/poema10-1.png`,
     text: `
 <span class="estrofe">
 dançar o ocidente<br>
@@ -814,7 +814,7 @@ de m/fim
   },
   {
     name: "poema10-2",
-    imgPath: `${imgBaseUrl}/poema10-2.jpg`,
+    imgPath: `${imgBaseUrl}/poema10-2.png`,
     text: `
 <span class="estrofe">
 dançar o ocidente<br>
